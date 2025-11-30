@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --primary: #111;       /* Almost Black */
+  --secondary: #555;     /* Dark Gray */
+  --accent: #007bff;     /* Blue for call to action */
+  --bg-light: #f8f9fa;   /* Light Gray Background */
+  --white: #ffffff;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --radius: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+/* Global Button Styles */
+.view-btn, .checkout-btn, button[type="submit"] {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-align: center;
+  display: inline-block;
+}
+
+.view-btn:hover, .checkout-btn:hover, button[type="submit"]:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
