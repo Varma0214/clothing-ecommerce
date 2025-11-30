@@ -7,7 +7,7 @@
   padding: 20px;
   background: var(--white);
   border-radius: var(--radius);
-  /* Optional: Remove background/shadow for a flatter look */
+  
 }
 
 .detail-image img {
@@ -31,7 +31,7 @@
 
 .detail-price {
   font-size: 1.8rem;
-  color: var(--accent); /* Blue price tag */
+  color: var(--accent); 
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -56,7 +56,7 @@
   margin-bottom: 40px;
 }
 
-/* Make sizes look like boxes */
+
 .sizes select {
     padding: 15px;
     width: 200px;
