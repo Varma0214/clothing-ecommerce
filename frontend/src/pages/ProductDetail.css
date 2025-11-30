@@ -65,7 +65,7 @@
 }
 
 .add-cart-btn {
-  color:white,
+  color:white;
   padding: 18px;
   font-size: 1.1rem;
   background: var(--primary);
