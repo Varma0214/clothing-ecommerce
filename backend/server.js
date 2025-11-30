@@ -112,7 +112,10 @@ app.post('/api/orders', protect, async (req, res) => {
     // 2. Configure Nodemailer
     // NOTE: You must use an App Password if using Gmail (Not your login password)
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      
       auth: {
         user: process.env.EMAIL_USER, 
         pass: process.env.EMAIL_PASS
